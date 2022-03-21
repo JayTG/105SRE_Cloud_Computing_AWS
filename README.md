@@ -5,4 +5,11 @@
 ##### AWS Services
 
 - Creating githup repo to push the markdown doc
+- Amazon Web Services (AWS)
+
+### Benefits of Cloud Computing
+- Ease of use
+- Felxibility 
+- Robustness
+- Cost
 
