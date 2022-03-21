@@ -1,11 +1,18 @@
 # SRE
 ## User Journey
+> A user journey is a path a user may take to reach their goal when using a particular website. User journeys are used in designing websites to identify the different ways to enable the user to achieve their goal as quickly and easily as possible.
 ### User experience
+> The user experience is how a user interacts with and experiences a product, system or service. It includes a person's perceptions of utility, ease of use, and efficiency
 #### Cloud computing with AWS
 ##### AWS Services
 
 - Creating githup repo to push the markdown doc
 - Amazon Web Services (AWS)
+
+### What is the role of SRE?
+- An SRE is responsible for making sure that a given service is up and running
+- Making sure that the user Experience is satisfactory through and through
+
 
 ### Benefits of Cloud Computing
 - Ease of use
