@@ -67,3 +67,21 @@ https://aws.amazon.com/about-aws/global-infrastructure/
 
 ![vtanoyog](https://user-images.githubusercontent.com/87706066/159463394-5b656e36-fe85-4ebb-9a08-2134562cbcb6.png)
 
+### Connect local host to AWS VM through SSH
+- put the SSH key into your .ssh folder (C:/users/username/.ssh)
+- In AWS Select EC2
+- Create a new instance (in this case ubuntu v18.04)
+- add a name 
+- add security groups:
+ - make sure to restrict access in SSH selecting proper port
+ - allow access to VM through HTTP
+- Launch and connect following the instrcutions from AWS
+
+### Using the VM
+- Run: sudo apt-get update -y
+- Run: sudo apt-get upgrade -y
+- Run: sudo apt-get install nginx -y
+- Check that it ws installed successfully by the public ip in the browser
+
+
+
