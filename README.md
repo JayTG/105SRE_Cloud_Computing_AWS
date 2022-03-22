@@ -62,3 +62,8 @@ https://aws.amazon.com/about-aws/global-infrastructure/
 ![n7dvlx4qa6l8pozadq0m](https://user-images.githubusercontent.com/87706066/159285556-d8d5ad88-176a-4658-9c5c-639362a64e3e.png)
 
 - The AWS Cloud spans 84 Availability Zones within 26 geographic regions around the world, with announced plans for 24 more Availability Zones and 8 more AWS Regions in Australia, Canada, India, Israel, New Zealand, Spain, Switzerland, and United Arab Emirates (UAE).
+
+### AWS Diagram
+
+![vtanoyog](https://user-images.githubusercontent.com/87706066/159463394-5b656e36-fe85-4ebb-9a08-2134562cbcb6.png)
+
