@@ -73,10 +73,12 @@ https://aws.amazon.com/about-aws/global-infrastructure/
 - put the SSH key into your .ssh folder (C:/users/username/.ssh)
 - In AWS Select EC2
 - Create a new instance (in this case ubuntu v18.04)
-- add a name 
+- Choose the subnet and enable the Auto assign public IP
+- add a name tag
 - add security groups:
  - make sure to restrict access in SSH selecting proper port
  - allow access to VM through HTTP
+- Choose a exsisting key pair e.g. 105 | RSA
 - Launch and connect following the instrcutions from AWS
 
 ### Using the VM
@@ -84,6 +86,9 @@ https://aws.amazon.com/about-aws/global-infrastructure/
 - Run: sudo apt-get upgrade -y
 - Run: sudo apt-get install nginx -y
 - Check that it ws installed successfully by the public ip in the browser
+
+### Currently working instance webpage
+http://34.250.89.52/
 
 
 
