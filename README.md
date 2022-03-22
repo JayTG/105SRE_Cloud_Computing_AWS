@@ -26,6 +26,8 @@ Multiple avaliability zones are needed so it can automatically using the load ba
 CDN (content delivery network) They work by getting a request and storing data on the cache. it get stored at the nearest available zone from the user.
 
 ### On Prem vs Hybrid - On Prem Vs Public Cloud
+![1 LRFaWc35HsUyKikmrzD9qw](https://user-images.githubusercontent.com/87706066/159496317-9e1b54d4-785e-4aef-8363-273b3fc61d43.png)
+
 On prem means that business may use local data centres to store information. An example would be a bank storing private information sucha as passwords and other details. 
 - The business will be responsible for the safekeeping of that prem data center.
 - It can be costly 
