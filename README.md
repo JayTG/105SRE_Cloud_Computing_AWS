@@ -177,6 +177,10 @@ http://34.243.62.205:8080/
 > It controls traffic to or from a subnet according to a set of inbound and outbound rules. 
 - What is a Security Group?
 > A security group acts as a virtual firewall, controlling the traffic that is allowed to reach and leave the resources that it is associated with
+- How did you secure your app on the public cloud?
+> Running tests on the app to determine limits of the public cloud. Setting up Security Group / Server Firewall. Installing/buying services that protect the instance against attacks designed to slow down/terminate the service.
+- What are the outbound rules for SG by default? And why?
+> Default SG starts with only one outbound rule that allows all traffic to leave the resource. You must add rules to enable any inbound traffic or to restrict the outbound traffic. A security group can be used only in the VPC for which it is created.
 - What is the command to kill a process in linux?
-> kill or killall
+> `kill` or `killall`
 
