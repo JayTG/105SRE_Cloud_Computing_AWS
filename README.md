@@ -106,4 +106,10 @@ http://34.250.89.52/
 - Create file `touch name_file` or `nano file_name`
 - Check content of the file without going inside the file `cat file_name`
 - Move a file `mv file_name ~/location`
+- Delete folder `rm -rf folder_name`
 
+### File permissions
+- How to check a file permission `ll`
+- Change file premission  `chmod required_permission file_name`
+- write `w` read `r` exe `x`
+- http://permissions-calculator.org/
