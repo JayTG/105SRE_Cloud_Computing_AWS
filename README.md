@@ -159,4 +159,5 @@ sudo systemctl enable tomcat9
 # allow traffic to port 8080
 sudo ufw allow from any to any port 8080 proto tcp
 `````````
-
+Web address example
+http://34.243.62.205:8080/
