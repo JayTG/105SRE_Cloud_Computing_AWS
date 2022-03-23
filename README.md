@@ -87,8 +87,23 @@ https://aws.amazon.com/about-aws/global-infrastructure/
 - Run: sudo apt-get install nginx -y
 - Check that it ws installed successfully by the public ip in the browser
 
-### Currently working instance webpage
+### Working instance webpage example (Terminated)
 http://34.250.89.52/
 
+### Linux Command
 
+- How to start a service `sudo systemctl start name_service`
+- How to stop a service `sudo systemctl stop name_service`
+- How to check status `systemctl status name_service`
+- How to enable a service `systemctl enable name_service`
+- How to install a package `sudo apt-get install package_name -y`
+- How to remove a package `sudo apt-get remove package_name -y`
+- How to check all process `top`
+- Who am I `uname` or `uname -a`
+- Where am I `pwd`
+- Create a dir `mkdir dir_name`
+- Check dir `ls` or `ls -a`
+- Create file `touch name_file` or `nano file_name`
+- Check content of the file without going inside the file `cat file_name`
+- 
 
