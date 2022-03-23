@@ -113,3 +113,32 @@ http://34.250.89.52/
 - Change file premission  `chmod required_permission file_name`
 - write `w` read `r` exe `x`
 - https://chmod-calculator.com
+
+### Bash scripting - automate process with the script
+
+```bash
+# create file called provision.sh
+
+# it must start with #!/bin/bash
+#!/bin/bash
+
+# run updates
+sudo apt-get update  -y
+
+# run upgrades
+sudo apt-get upgrade -y
+
+# install nginx
+sudo apt-get install nginx -y
+
+# ensure it's running - start nginx
+sudo systemctl start nginx
+
+# enable nginx
+sudo systemctl enable nginx
+
+`````
+
+- Change the file to exe `chmod +x provision.sh`
+- how to run an exe file `./provision.sh`
+
