@@ -161,3 +161,22 @@ sudo ufw allow from any to any port 8080 proto tcp
 `````````
 Web address example
 http://34.243.62.205:8080/
+
+### Technical Questions
+- What is a VPC?
+> Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined.
+- What is a Internet Gateway?
+> A computer that sits between different networks or applications. The gateway converts information, data or other communications from one protocol or format to another. 
+- What is a Internet Gateway?
+> A computer that sits between different networks or applications. The gateway converts information, data or other communications from one protocol or format to another. 
+- What is a Route Table?
+> A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed
+- What is a Subnet?
+> A subnet, or subnetwork, is a network inside a network. Subnets make networks more efficient. Through subnetting, network traffic can travel a shorter distance without passing through unnecessary routers to reach its destination.
+- What is a Nacls?
+> It controls traffic to or from a subnet according to a set of inbound and outbound rules. 
+- What is a Security Group?
+> A security group acts as a virtual firewall, controlling the traffic that is allowed to reach and leave the resources that it is associated with
+- What is the command to kill a process in linux?
+> kill or killall
+
