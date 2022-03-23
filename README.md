@@ -112,4 +112,4 @@ http://34.250.89.52/
 - How to check a file permission `ll`
 - Change file premission  `chmod required_permission file_name`
 - write `w` read `r` exe `x`
-- http://permissions-calculator.org/
+- https://chmod-calculator.com
