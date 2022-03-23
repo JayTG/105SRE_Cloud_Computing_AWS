@@ -105,5 +105,5 @@ http://34.250.89.52/
 - Check dir `ls` or `ls -a`
 - Create file `touch name_file` or `nano file_name`
 - Check content of the file without going inside the file `cat file_name`
-- 
+- Move a file `mv file_name ~/location`
 
