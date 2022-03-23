@@ -142,3 +142,21 @@ sudo systemctl enable nginx
 - Change the file to exe `chmod +x provision.sh`
 - how to run an exe file `./provision.sh`
 
+### Bash Tomcat install script
+
+```bash 
+#!/bin/bash
+#get updates
+sudo apt-get update -y
+#get upgrades
+sudo apt-get upgrade -y
+# install tomcat
+sudo apt install tomcat9 -y
+# ensure it's running - start tomcat
+sudo systemctl start tomcat9
+# enable tomcat
+sudo systemctl enable tomcat9
+# allow traffic to port 8080
+sudo ufw allow from any to any port 8080 proto tcp
+`````````
+
