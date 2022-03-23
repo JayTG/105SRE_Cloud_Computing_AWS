@@ -184,3 +184,6 @@ http://34.243.62.205:8080/
 - What is the command to kill a process in linux?
 > `kill` or `killall`
 
+### VPC Diagram
+![1VKTHtHwo3pUxeDP0ZmrOoA](https://user-images.githubusercontent.com/87706066/159799825-13fe4dbb-fb86-4586-ae1d-54342eae95a3.png)
+
