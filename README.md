@@ -187,12 +187,20 @@ http://34.243.62.205:8080/
 ![1VKTHtHwo3pUxeDP0ZmrOoA](https://user-images.githubusercontent.com/87706066/159799825-13fe4dbb-fb86-4586-ae1d-54342eae95a3.png)
 
 ### Monolith - N-tier - 2-tier & Microservices Architecture
-- The Monolith before micro services
-- - Simple but has limitations and complexity
-- - Heavy apps can slow down the start up time
-- - Each update results into redeplying the full stack app
-- - Challenging to scale up on demand
-- - Fruitful for simple and lightweight apps
+- The Monolith before Microservices
+  - Simple but has limitations and complexity
+  - Heavy apps can slow down the start up time
+  - Each update results into redeplying the full stack app
+  - Challenging to scale up on demand
+  - Fruitful for simple and lightweight apps
+
+- Microservices
+  - Improved maintainability: each service is relatively small and so is easier to understand and change
+  - Better testability: services are smaller and faster to test
+  - Better deployability: services can be deployed independently
+  - Implementing requests that span multiple services is more difficult
+  - Testing the interactions between services is more difficult
+  - Implementing requests that span multiple services requires careful coordination between the teams
 
 ![1 Un9W-mw18NLtuQdsBNytJQ](https://user-images.githubusercontent.com/87706066/159909610-a5adb6e7-63c8-45b3-96ec-ccf416a2830f.png)
 
@@ -204,12 +212,12 @@ http://34.243.62.205:8080/
 ![scale-up](https://user-images.githubusercontent.com/87706066/159910233-6f3f3744-513d-4385-a8b3-5b361425dc28.jpg)
 
 - Who is using Micro Services?
-- - Amazon
-- - Netflix
-- - Uber
-- - Ebay
-- - Paypal
-- - Twitter
+  - Amazon
+  - Netflix
+  - Uber
+  - Ebay
+  - Paypal
+  - Twitter
 
 ### SRE (DevOps) Culture and CICD
 article link: https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450
