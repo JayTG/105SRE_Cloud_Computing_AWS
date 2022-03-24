@@ -210,6 +210,37 @@ http://34.243.62.205:8080/
 - - Ebay
 - - Paypal
 - - Twitter
+
+### SRE (DevOps) Culture and CICD
+article link: https://medium.com/@ahshahkhan/devops-culture-and-cicd-3761cfc62450
+
+DevOps is a culture that bridges the gap between development and operation teams
+DevOps can build a pipeline using Docker and Jenkins
+Docker builds a container images for the app making easier to create deploy and run, fully automated build and test process which gives feedback
+
+- CI (Continuous Integration)
+> Developer muts merge/commit code to master brancg multiple times a day
+
+![0 oT8URYV7NzjEplUZ](https://user-images.githubusercontent.com/87706066/159934357-c80d8e5d-37fc-49c8-b6a4-0ec251d29c4a.png)
+
+- CD (Continuous Delivery)
+> An extension of continuous integration to make sure that you can release new changes to quickl in sustainable way. Automated testing and releases
+
+![0 AUo3q0hKivOsw6jU](https://user-images.githubusercontent.com/87706066/159934748-0e6da982-6c7b-472f-ba23-9fa2ae28ee08.png)
+
+
+- CD (Continuous Deployment)
+> Every change that passes all stages of the production pipeline is released. Only a failed test will prevent a new change to be deployed to production
+
+![0 y2Pwj5q1aeZ6zweo](https://user-images.githubusercontent.com/87706066/159934839-30655bf5-1db6-4d65-acc6-b03aff57ab3d.png)
+
+
+- CI CD Pipeline
+> All about automation:Initiating code builds, automated testing, and automated deploying to the staging or production enviroments
+
+![0 lPrZgS-AIFTRtKFc](https://user-images.githubusercontent.com/87706066/159935998-704eb675-11d4-4d62-a326-d5b587934300.png)
+
+
  
  
 
