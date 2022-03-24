@@ -106,6 +106,7 @@ http://34.250.89.52/
 - Create file `touch name_file` or `nano file_name`
 - Check content of the file without going inside the file `cat file_name`
 - Move a file `mv file_name ~/location`
+- Copy a file `cp file_name ~/location`
 - Delete folder `rm -rf folder_name`
 
 ### File permissions
