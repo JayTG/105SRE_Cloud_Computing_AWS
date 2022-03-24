@@ -172,7 +172,7 @@ http://34.243.62.205:8080/
 - What is a Subnet?
 > A subnet, or subnetwork, is a network inside a network. Subnets make networks more efficient. Through subnetting, network traffic can travel a shorter distance without passing through unnecessary routers to reach its destination.
 - What is a Nacls?
-> (Network access control list) It controls traffic to or from a subnet according to a set of inbound and outbound rules. 
+> (Network access control lists) It controls traffic to or from a subnet according to a set of inbound and outbound rules. 
 - What is a Security Group?
 > A security group acts as a virtual firewall, controlling the traffic that is allowed to reach and leave the resources that it is associated with
 - How did you secure your app on the public cloud?
