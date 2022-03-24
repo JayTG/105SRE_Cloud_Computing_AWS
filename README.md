@@ -204,6 +204,15 @@ http://34.243.62.205:8080/
 
 ![1 Un9W-mw18NLtuQdsBNytJQ](https://user-images.githubusercontent.com/87706066/159909610-a5adb6e7-63c8-45b3-96ec-ccf416a2830f.png)
 
+- Two-tier architecture
+  - In a two-tier architecture, the client is on the first tier. The database server and web application server reside on the same server machine, which is the second tier. This second tier serves the data and executes the business logic for the web application.
+
+- N-Tier architecture
+  - A architecture more than two tiers, divides an application into logical layers and physical tiers. Layers are a way to separate responsibilities and manage dependencies.
+ 
+![1 IPS8EUQAU6lmsV81aPlGjA](https://user-images.githubusercontent.com/87706066/159959691-3c7f8d41-ba44-4e88-853b-0db7bb8aab65.jpeg)
+
+
 - The difference of scale out and scale up?
  - Scale out means to add new instances when the number of users increases. Scale up means to increase the specs (e.g. memory) when the size of what is being used in the instance is too high for the current specs#
 
@@ -247,6 +256,20 @@ Docker builds a container images for the app making easier to create deploy and 
 > All about automation:Initiating code builds, automated testing, and automated deploying to the staging or production enviroments
 
 ![0 lPrZgS-AIFTRtKFc](https://user-images.githubusercontent.com/87706066/159935998-704eb675-11d4-4d62-a326-d5b587934300.png)
+
+### SDLC
+Software Development Life Cycle is the application of standard business practices to building software applications. It's typically divided into six to eight steps: Planning, Requirements, Design, Build, Document, Test, Deploy, Maintain.
+
+![Phases-of-Software-Development-Life-Cycle](https://user-images.githubusercontent.com/87706066/159960407-cfff4c16-fdd9-4a15-80bb-aa4af9997bfc.png)
+
+
+### GitFlow best practices
+There is no CI good practice that includes GitFlow. For continuous integration to meet the definition, these are the good practices:
+
+- Developers must implement all tests before they commit code. This is a non-negotiable and I will not work with developers who refuse to test. Professionals deliver working, tested code. Script kiddies don’t test.
+- Stand up CI automation and trigger builds for every pull request so that bad changes can be rejected.
+- Ensure that all tests are executed and linting and static code analysis is done for every PR.
+- Implement CI practices. All developers branch from the trunk, make changes, and submit PRs back to the trunk. The branches are removed in less than 24 hours.
 
 
  
