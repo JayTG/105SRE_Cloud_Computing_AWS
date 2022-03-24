@@ -167,8 +167,6 @@ http://34.243.62.205:8080/
 > Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined.
 - What is a Internet Gateway?
 > A computer that sits between different networks or applications. The gateway converts information, data or other communications from one protocol or format to another. 
-- What is a Internet Gateway?
-> A computer that sits between different networks or applications. The gateway converts information, data or other communications from one protocol or format to another. 
 - What is a Route Table?
 > A route table contains a set of rules, called routes, that determine where network traffic from your subnet or gateway is directed
 - What is a Subnet?
