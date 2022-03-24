@@ -186,3 +186,30 @@ http://34.243.62.205:8080/
 ### VPC Diagram
 ![1VKTHtHwo3pUxeDP0ZmrOoA](https://user-images.githubusercontent.com/87706066/159799825-13fe4dbb-fb86-4586-ae1d-54342eae95a3.png)
 
+### Monolith - N-tier - 2-tier & Microservices Architecture
+- The Monolith before micro services
+- - Simple but has limitations and complexity
+- - Heavy apps can slow down the start up time
+- - Each update results into redeplying the full stack app
+- - Challenging to scale up on demand
+- - Fruitful for simple and lightweight apps
+
+![1 Un9W-mw18NLtuQdsBNytJQ](https://user-images.githubusercontent.com/87706066/159909610-a5adb6e7-63c8-45b3-96ec-ccf416a2830f.png)
+
+- The difference of scale out and scale up?
+ - Scale out means to add new instances when the number of users increases. Scale up means to increase the specs (e.g. memory) when the size of what is being used in the instance is too high for the current specs#
+
+![scale-out](https://user-images.githubusercontent.com/87706066/159910137-66baf563-cd52-46bc-93f5-325fef0b3207.jpg)
+
+![scale-up](https://user-images.githubusercontent.com/87706066/159910233-6f3f3744-513d-4385-a8b3-5b361425dc28.jpg)
+
+- Who is using Micro Services?
+- - Amazon
+- - Netflix
+- - Uber
+- - Ebay
+- - Paypal
+- - Twitter
+ 
+ 
+
