@@ -271,6 +271,23 @@ There is no CI good practice that includes GitFlow. For continuous integration t
 - Ensure that all tests are executed and linting and static code analysis is done for every PR.
 - Implement CI practices. All developers branch from the trunk, make changes, and submit PRs back to the trunk. The branches are removed in less than 24 hours.
 
+### S3 (Simple Storage Service)
+
+### AWS CLI setup
+- `aws configure`
+- (input id keys region format)
+- `aws s3 ls` (using aws go to s3 and do this command)
+- `aws s3 mb s3://folder_name` (create bucket)
+
+### Upload files to S3:
+- `aws s3 cp file_name s3://folder_name` (aws service name-of-file path)
+
+### Download data from s3:
+- `aws s3 cp s3://folder_name/file_name ~/`
+
+### Delete bucket
+- `aws s3 rb s3://folder_name`
+- `aws s3 rm s3://folder_name/file_name ~/` (Delete file in bucket
 
 
 
