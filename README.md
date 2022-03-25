@@ -272,6 +272,8 @@ There is no CI good practice that includes GitFlow. For continuous integration t
 - Implement CI practices. All developers branch from the trunk, make changes, and submit PRs back to the trunk. The branches are removed in less than 24 hours.
 
 
+
+
  
  
 
