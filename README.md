@@ -289,8 +289,34 @@ There is no CI good practice that includes GitFlow. For continuous integration t
 - `aws s3 rb s3://folder_name`
 - `aws s3 rm s3://folder_name/file_name ~/` (Delete file in bucket
 
+## API mini-project
 
+### Online Api Development Diagram
 
+![diagram](https://user-images.githubusercontent.com/87706066/160295359-fb89863d-20a4-4c71-9949-31ce3585c1eb.png)
+
+### Northwind database in Ubuntu EC2 Instance 
+- Go to AWS Console 
+- Create a Ubuntu 18.04 Instaance using a security group with the ports: 22 80 and 1433 (1433 is important for the sql server wont be able to connect)
+- Connect the instance on git bash following the instructions on AWS
+- Follow this video https://www.youtube.com/watch?v=bzOljuaYeUk or documentation (Recommened) https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
+- If successful open Microsoft SQL Server Management Studio. Enter the instances public ip in server name, change the authentication to SQL Server. Finally enter the username as "sa" and enter the password as the password you set in whilst following the video eariler. A connection to the server should be established.
+- Right click on the server name on the left side and add a new query, copy and paste the Northwinnd databse Raw text https://raw.githubusercontent.com/microsoft/sql-server-samples/master/samples/databases/northwind-pubs/instnwnd.sql into the query then execute it. The northwind database should not now be the SQL Server instance
+
+### ASP.NET API on Windows EC2 Instance
+- Go to AWS Console 
+- Create a Microsoft Window Server Instaance using a security group with the ports: 22 80 and 3389 (3389 is important for Remote desktop protocol (RDP))
+- Connect the instance following the instructions on AWS
+- Open the asp.net solution in visual studio and 
+- Follow this tutorial https://aws.amazon.com/getting-started/hands-on/host-net-web-app/ (even though it's older it still works for the most part)
+- After that and if that the api was published the webpage should show a 500 Error
+- Inside the windows instance install Windows Hosting Bundle https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.3-windows-hosting-bundle-installer 
+-  Test the api by using it on postman (The web address is the public ip)
+
+### Useful Links
+- https://www.youtube.com/watch?v=bzOljuaYeUk 
+- https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
+- https://aws.amazon.com/getting-started/hands-on/host-net-web-app/
  
  
 
