@@ -273,6 +273,16 @@ There is no CI good practice that includes GitFlow. For continuous integration t
 
 ### S3 (Simple Storage Service)
 
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
+
+- Storage classes: Amazon S3 offers a range of storage classes designed for different use cases.
+- Storage management: Amazon S3 has storage management features that you can use to manage costs, meet regulatory requirements, reduce latency, and save multiple distinct copies of your data for compliance requirements.
+- Access management: Amazon S3 provides features for auditing and managing access to your buckets and objects. By default, S3 buckets and the objects in them are private. You have access only to the S3 resources that you create.
+- Data processing: To transform data and trigger workflows to automate a variety of other processing activities at scale, you can use the following features.
+- Storage logging and monitoring: Amazon S3 provides logging and monitoring tools that you can use to monitor and control how your Amazon S3 resources are being used.
+- Analytics and insights: Amazon S3 offers features to help you gain visibility into your storage usage, which empowers you to better understand, analyze, and optimize your storage at scale.
+- Strong consistency: Amazon S3 provides strong read-after-write consistency for PUT and DELETE requests of objects in your Amazon S3 bucket in all AWS Regions. This behavior applies to both writes of new objects as well as PUT requests that overwrite existing objects and DELETE requests.
+
 ### AWS CLI setup
 - `aws configure`
 - (input id keys region format)
