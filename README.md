@@ -358,9 +358,19 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 - delete a container `docker rm containerID -f`
 - show container logs `docker logs containerID  
 
-### Create a docker image from a container
+## Create a docker image from a container
 
 https://www.sentinelone.com/blog/create-docker-image/
+
+### Important Steps
+
+- Modify the base containers html.file
+- Create a image from base container `docker commit base_ContainerID`
+- `docker images` to show all images and copy the image with the none tag
+- Add a tag to the image `docker tag containerID tag_name`
+- Run the new image a new port `docker run -d -p portname image_name` or Delete the base container `docker rm base_ContainerID -f` and run the image on a default port
+- Push the image on docker hub to create a new public repository or on the command line `docker push DockerID/ImageName
+
  
  
 
