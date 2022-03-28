@@ -330,6 +330,11 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 
 ### Containers vs Virtual Machines
 
+![containers-vs-virtual-machines](https://user-images.githubusercontent.com/87706066/160423786-62a3dec0-4763-4f68-89d1-f37a470fb0ea.jpg)
+
+### Docker Architecture 
+
+![sdsds](https://user-images.githubusercontent.com/87706066/160424277-bf8eff31-5a87-4341-8ae8-d468837c54e3.png)
 
 ## Docker install (Windows)
 - Download and install Docker Desktop for Windows https://hub.docker.com/editions/community/docker-ce-desktop-windows
