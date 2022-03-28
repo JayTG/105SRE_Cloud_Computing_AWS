@@ -327,6 +327,15 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 - https://www.youtube.com/watch?v=bzOljuaYeUk 
 - https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
 - https://aws.amazon.com/getting-started/hands-on/host-net-web-app/
+
+## Docker install (Windows)
+- Download and install Docker Desktop for Windows https://hub.docker.com/editions/community/docker-ce-desktop-windows
+- After the installation restart the computer
+- Open docker and the message should appear asking you to install the WLS2 Linux Kernel Package
+- Do only step 4 https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package  
+- After the installation is done restart Docker
+- In powershell or bash type the commannd `docker --version` to check which verison of Docker is being used
+- Type the commannd `docker run hello-world` to get the hello-world image and confirm Docker is working correctly
  
  
 
