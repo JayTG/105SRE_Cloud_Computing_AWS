@@ -165,7 +165,7 @@ http://34.243.62.205:8080/
 
 ### Technical Questions
 - What is a VPC?
-> Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you've defined.
+> Amazon Virtual Private Cloud (Amazon VPC) enables you to launch AWS resources into a virtual network that you have defined.
 - What is a Internet Gateway?
 > A computer that sits between different networks or applications. The gateway converts information, data or other communications from one protocol or format to another. 
 - What is a Route Table?
@@ -258,7 +258,7 @@ Docker builds a container images for the app making easier to create deploy and 
 ![0 lPrZgS-AIFTRtKFc](https://user-images.githubusercontent.com/87706066/159935998-704eb675-11d4-4d62-a326-d5b587934300.png)
 
 ### SDLC
-Software Development Life Cycle is the application of standard business practices to building software applications. It's typically divided into six to eight steps: Planning, Requirements, Design, Build, Document, Test, Deploy, Maintain.
+Software Development Life Cycle is the application of standard business practices to building software applications. It is typically divided into six to eight steps: Planning, Requirements, Design, Build, Document, Test, Deploy, Maintain.
 
 ![Phases-of-Software-Development-Life-Cycle](https://user-images.githubusercontent.com/87706066/159960407-cfff4c16-fdd9-4a15-80bb-aa4af9997bfc.png)
 
@@ -318,7 +318,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 - Create a Microsoft Window Server Instaance using a security group with the ports: 22 80 and 3389 (3389 is important for Remote desktop protocol (RDP))
 - Connect the instance following the instructions on AWS
 - Open the asp.net solution in visual studio and 
-- Follow this tutorial https://aws.amazon.com/getting-started/hands-on/host-net-web-app/ (even though it's older it still works for the most part)
+- Follow this tutorial https://aws.amazon.com/getting-started/hands-on/host-net-web-app/ (even though its older it still works for the most part)
 - After that and if that the api was published the webpage should show a 500 Error
 - Inside the windows instance install Windows Hosting Bundle https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-aspnetcore-6.0.3-windows-hosting-bundle-installer 
 -  Test the api by using it on postman (The web address is the public ip)
@@ -328,6 +328,9 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 - https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15
 - https://aws.amazon.com/getting-started/hands-on/host-net-web-app/
 
+### Containers vs Virtual Machines
+
+
 ## Docker install (Windows)
 - Download and install Docker Desktop for Windows https://hub.docker.com/editions/community/docker-ce-desktop-windows
 - After the installation restart the computer
@@ -336,6 +339,19 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 - After the installation is done restart Docker
 - In powershell or bash type the commannd `docker --version` to check which verison of Docker is being used
 - Type the commannd `docker run hello-world` to get the hello-world image and confirm Docker is working correctly
+
+
+### Docker commannds
+- check docker version `docker --version`
+- run a image `docker run -d -p portNum image_name`
+- show all images `docker images`
+- show all images `docker ps` or `docker ps -a`
+- copy a file from local to container `docker cp file_name containerID:/file_path/file_name`
+- execute image `docker exec -it e89de200d89b sh`
+- delete a container `docker rm containerID -f`
+- show container logs `docker logs containerID  
+
+
  
  
 
