@@ -358,7 +358,9 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 - delete a container `docker rm containerID -f`
 - show container logs `docker logs containerID  
 
+### Create a docker image from a container
 
+https://www.sentinelone.com/blog/create-docker-image/
  
  
 
