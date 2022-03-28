@@ -364,7 +364,7 @@ https://www.sentinelone.com/blog/create-docker-image/
 
 ### Important Steps
 
-- Modify the base containers html.file
+- Modify the html.file of the base container
 - Create a image from base container `docker commit base_ContainerID`
 - `docker images` to show all images and copy the image with the none tag
 - Add a tag to the image `docker tag containerID tag_name`
