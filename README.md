@@ -332,8 +332,11 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 
 ![containers-vs-virtual-machines](https://user-images.githubusercontent.com/87706066/160423786-62a3dec0-4763-4f68-89d1-f37a470fb0ea.jpg)
 
-### Docker Architecture 
+### What is Docker?
 
+Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
+
+### Docker Architecture 
 
 ![sdsds](https://user-images.githubusercontent.com/87706066/160424540-94d25bbe-0922-4aaa-8abd-ee74b107aaa6.png)
 
@@ -364,7 +367,7 @@ https://www.sentinelone.com/blog/create-docker-image/
 
 ### Important Steps
 
-- Modify the html.file of the base container
+- Locate and modify the html.file of the base container
 - Create a image from base container `docker commit base_ContainerID`
 - `docker images` to show all images and copy the image with the none tag
 - Add a tag to the image `docker tag containerID tag_name`
