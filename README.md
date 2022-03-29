@@ -332,6 +332,10 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#S3Features
 
 ![containers-vs-virtual-machines](https://user-images.githubusercontent.com/87706066/160423786-62a3dec0-4763-4f68-89d1-f37a470fb0ea.jpg)
 
+### Virtualzation vs Containerization comparison
+
+![Screenshot 2022-03-29 100049](https://user-images.githubusercontent.com/87706066/160575267-195d03e8-b664-4d3f-92ce-13ca7f349fea.png)
+
 ### What is Docker?
 
 Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.
