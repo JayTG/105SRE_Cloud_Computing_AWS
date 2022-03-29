@@ -409,3 +409,33 @@ CMD ["nginx", "-g", "daemon off;"]
 # CMD will run the commannd in this case to launch the image when we create a container
 ```````
 
+## Create a docker image from a api
+Follow this tutorial https://docs.microsoft.com/en-us/dotnet/core/docker/build-container?tabs=windows
+
+-Add a docker in the project's root folder rewrite the dll file to successfully execute 
+
+````bash
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
+WORKDIR /app
+
+# Copy everything
+COPY . ./
+# Restore as distinct layers
+RUN dotnet restore
+# Build and publish a release
+RUN dotnet publish -c Release -o out
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "<File_Name>.dll"]
+`````
+
+- Open bash in the project folder
+- Build it `docker build <image_name>`
+- Run it `docker run <image_name>`
+
+### My api docker image
+https://hub.docker.com/r/jaytg/105_sre_northwind_api
+`docker run -d -p 80:80 jaytg/105_sre_northwind_api`
