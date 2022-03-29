@@ -381,3 +381,31 @@ https://www.sentinelone.com/blog/create-docker-image/
 ### My Created Image
 docker run -d -p 80:80 jaytg/sre_105:latest
 
+## Docker file to automate the process of building customised image - Building a Microservice with Docker
+- Crio - Rocket - Docker
+- Automate image building of our customised nginx image
+- Create a `Dockerfile`in the same location where our index.html is
+- Decide which base image to use for your image
+- Test the image locally to ensure it works 
+- If all good then push to dockerhub
+
+Dockerfile code
+`````bash
+# select base image
+FROM nginx
+
+# Label it - add optional details
+LABEL MAINTAINER=JAY
+
+# copy the data for localhost to container 
+COPY index.html /usr/share/nginx/html/
+# copy index.html to usr/share/nginx/html/
+
+# expose the require port  - port 80
+EXPOSE 80
+
+# launch the app
+CMD ["nginx", "-g", "daemon off;"]
+# CMD will run the commannd in this case to launch the image when we create a container
+```````
+
