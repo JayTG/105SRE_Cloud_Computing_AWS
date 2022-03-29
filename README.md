@@ -361,7 +361,7 @@ Docker is an open source containerization platform. It enables developers to pac
 - show all images `docker images`
 - show all images `docker ps` or `docker ps -a`
 - copy a file from local to container `docker cp file_name containerID:/file_path/file_name`
-- execute an running image `docker exec -it e89de200d89b sh`
+- enter an running container `docker exec -it e89de200d89b sh`
 - delete a container `docker rm containerID -f`
 - show container logs `docker logs containerID`  
 
