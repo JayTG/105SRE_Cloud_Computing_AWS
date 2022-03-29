@@ -357,13 +357,13 @@ Docker is an open source containerization platform. It enables developers to pac
 
 ### Docker commannds
 - check docker version `docker --version`
-- run a image `docker run -d -p portNum image_name`
+- run a image `docker run -d -p <portNum> <image_name>`
 - show all images `docker images`
 - show all images `docker ps` or `docker ps -a`
-- copy a file from local to container `docker cp file_name containerID:/file_path/file_name`
-- enter an running container `docker exec -it e89de200d89b sh`
-- delete a container `docker rm containerID -f`
-- show container logs `docker logs containerID`  
+- copy a file from local to container `docker cp </file_path/file_name> <containerID>:</file_path/file_name>`
+- enter an running container `docker exec -it <containerID>  sh`
+- delete a container `docker rm <containerID> -f`
+- show container logs `docker logs <containerID>`  
 
 ## Create a docker image from a container
 
@@ -372,11 +372,11 @@ https://www.sentinelone.com/blog/create-docker-image/
 ### Important Steps
 
 - Locate and modify the html.file of the base container
-- Create a image from base container `docker commit base_ContainerID`
+- Create a image from base container `docker commit <base_ContainerID>`
 - `docker images` to show all images and copy the image with the none tag
-- Add a tag to the image `docker tag containerID tag_name`
-- Run the new image a new port `docker run -d -p portname image_name` or Delete the base container `docker rm base_ContainerID -f` and run the image on a default port
-- Push the image on docker hub to create a new public repository or on the command line `docker push DockerID/ImageName`
+- Add a tag to the image `docker tag <containerID> <tag_name>`
+- Run the new image a new port `docker run -d -p <portnum> <image_name>` or Delete the base container `docker rm <base_ContainerID> -f` and run the image on a default port
+- Push the image on docker hub to create a new public repository or on the command line `docker push <DockerID/ImageName>`
 
 ### My Created Image
 docker run -d -p 80:80 jaytg/sre_105:latest
