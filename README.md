@@ -439,3 +439,11 @@ ENTRYPOINT ["dotnet", "<File_Name>.dll"]
 ### My api docker image
 https://hub.docker.com/r/jaytg/105_sre_northwind_api
 `docker run -d -p 80:80 jaytg/105_sre_northwind_api`
+
+## Kubernetes (K8)
+
+- services: deployment, service, pods, replicasets, crobjob, autoscalinggroup, horizontal pod scaling group (HPA)
+-  Kubect get service_name - deployment - pod - rs
+- kubectl get deploy nginx_deploy (nginx_svc)
+- kubectl get pods 
+- kubect describe pod pod_name
