@@ -447,3 +447,16 @@ https://hub.docker.com/r/jaytg/105_sre_northwind_api
 - kubectl get deploy nginx_deploy (nginx_svc)
 - kubectl get pods 
 - kubect describe pod pod_name
+
+### Enabling Kubernetes
+- Open Docker Desktop on go to settings
+- Go to Kubernetes and tick Enable Kubernetes and Show system containers
+- Kubernetes should start running after a few mintues 
+- Check to see if it's running by entering the command `kubectl get svc` or `kubectl get service`
+
+This output should look like this
+
+![Screenshot 2022-03-30 135214](https://user-images.githubusercontent.com/87706066/160838741-4606044b-d75e-425a-8baf-3e6849b75993.png)
+
+- If it's not running restart docker or restart your local machine (check the memory too)
+- If all those solutions are not working you have to change the host file add 127.0.0.1 host.docker.internal at the end. Check this solution https://github.com/kubernetes/kubectl/issues/874#issuecomment-1080857862 and with help editing the host file go to this page https://www.groovypost.com/howto/edit-hosts-file-windows-10/
