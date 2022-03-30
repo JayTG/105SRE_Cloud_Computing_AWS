@@ -448,6 +448,12 @@ https://hub.docker.com/r/jaytg/105_sre_northwind_api
 - kubectl get pods 
 - kubect describe pod pod_name
 
+### Clusters 
+A Kubernetes cluster is a set of nodes that run containerized applications. Containerizing applications packages an app with its dependences and some necessary services. They are more lightweight and flexible than virtual machines.
+
+### Load Balancers
+The Kubernetes load balancer sends connections to the first server in the pool until it is at capacity, and then sends new connections to the next available server. This algorithm is ideal where virtual machines incur a cost, such as in hosted environments.
+
 ### Enabling Kubernetes
 - Open Docker Desktop on go to settings
 - Go to Kubernetes and tick Enable Kubernetes and Show system containers
@@ -465,6 +471,70 @@ This output should look like this
 
 ![k8](https://user-images.githubusercontent.com/87706066/160861039-bab7f6ee-2099-4b18-9294-9a6755dec9bb.png)
 
-
 ### Creating YML
-[YML link](yml.md)
+
+YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted.
+
+[YML Detail explaination link](yml.md)
+
+- Deployment file example
+```
+# YML is case sensitive - indetation of YML is important
+# use spaces not a tab
+apiVersion : apps/v1 # which api to use for deployment
+kind: Deployment # what kind of service/object you want to create
+
+# what would you like to call it
+metadata: 
+  name: nginx-deployment # naming the deployment
+spec: 
+  selector: 
+    matchLabels:
+      app: nginx # look for this label to match with k8 service
+    
+  # Let's create a replica set of this with 2 instances/pods
+  replicas: 3
+
+  # template to use it's label set of K8 service to launch in the browser
+  template:
+    metadata: 
+      labels:
+        app: nginx # This label connects to the service of any other k8 components
+  # Let's define the container spec
+    spec:
+     containers:
+     - name: nginx
+       image: jaytg/105_sre_nginx_test:latest
+       ports: 
+       - containerPort: 80
+       
+```
+Create a deployment `kubectl create -f nginx_deployment.yml` 
+
+- Service file example 
+```
+apiVersion : v1 # which api to use for deployment
+kind: Service # what kind of service/object you want to create
+#Metadata for name
+metadata:
+  name: nginx-svc
+  namespace: default 
+# Specification to include ports selector to connect to the deployment
+spec:
+  ports:
+  - nodePort: 30442 # port range (30000-32768)
+    port: 80 # target for the local host 
+    protocol: TCP
+    targetPort: 80 # target for all users
+
+# Let's define the selector and html and label to connect to nginx deployment
+  selector:
+   app: nginx # this label connects this service to deployment
+  
+  # Creating LoadBalancer type of deployment
+  type: LoadBalancer
+
+```
+
+Create a service `kubectl create -f nginx_svc.yml` 
+
