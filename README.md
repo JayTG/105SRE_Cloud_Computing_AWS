@@ -443,10 +443,10 @@ https://hub.docker.com/r/jaytg/105_sre_northwind_api
 ## Kubernetes (K8)
 
 - services: deployment, service, pods, replicasets, crobjob, autoscalinggroup, horizontal pod scaling group (HPA)
--  Kubect get service_name - deployment - pod - rs
-- kubectl get deploy nginx_deploy (nginx_svc)
-- kubectl get pods 
-- kubect describe pod pod_name
+- `kubectl get <service_name>` - deployment - pod - rs
+- `kubectl get deploy <nginx_deploy>` (nginx_svc)
+- `kubectl get pods` 
+- `kubect describe pod <pod_name>`
 
 ### Clusters 
 A Kubernetes cluster is a set of nodes that run containerized applications. Containerizing applications packages an app with its dependences and some necessary services. They are more lightweight and flexible than virtual machines.
@@ -471,13 +471,21 @@ This output should look like this
 
 ![k8](https://user-images.githubusercontent.com/87706066/160861039-bab7f6ee-2099-4b18-9294-9a6755dec9bb.png)
 
+##
+
 ### Creating YML
 
 YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted.
 
 [YML Detail explaination link](yml.md)
 
-- Deployment file example
+- Deployment file example [Nginx Deployment File Link](Nginx-deploy/nginx_deployment.yml)
+- Create a deployment `kubectl create -f nginx_deployment.yml` 
+- Service file example [Nginx Service File Link](Nginx-deploy/nginx_svc.yml)
+- Create a service `kubectl create -f nginx_svc.yml` 
+
+### YML API Task
+- Api deveployment file
 ```
 # YML is case sensitive - indetation of YML is important
 # use spaces not a tab
@@ -486,11 +494,11 @@ kind: Deployment # what kind of service/object you want to create
 
 # what would you like to call it
 metadata: 
-  name: nginx-deployment # naming the deployment
+  name: api-deployment # naming the deployment
 spec: 
   selector: 
     matchLabels:
-      app: nginx # look for this label to match with k8 service
+      app: api # look for this label to match with k8 service
     
   # Let's create a replica set of this with 2 instances/pods
   replicas: 3
@@ -499,42 +507,40 @@ spec:
   template:
     metadata: 
       labels:
-        app: nginx # This label connects to the service of any other k8 components
+        app: api # This label connects to the service of any other k8 components
   # Let's define the container spec
     spec:
      containers:
-     - name: nginx
-       image: jaytg/105_sre_nginx_test:latest
+     - name: api
+       image: jaytg/105_sre_northwind_api:latest
        ports: 
        - containerPort: 80
        
 ```
-Create a deployment `kubectl create -f nginx_deployment.yml` 
-
-- Service file example 
+- Api service file
 ```
 apiVersion : v1 # which api to use for deployment
 kind: Service # what kind of service/object you want to create
 #Metadata for name
 metadata:
-  name: nginx-svc
+  name: api-svc
   namespace: default 
 # Specification to include ports selector to connect to the deployment
 spec:
   ports:
-  - nodePort: 30442 # port range (30000-32768)
-    port: 80 # target for the local host 
+  - nodePort: 30443
+    port: 50 # target for the local host 
     protocol: TCP
     targetPort: 80 # target for all users
 
 # Let's define the selector and html and label to connect to nginx deployment
   selector:
-   app: nginx # this label connects this service to deployment
+   app: api # this label connects this service to deployment
   
   # Creating LoadBalancer type of deployment
   type: LoadBalancer
 
 ```
 
-Create a service `kubectl create -f nginx_svc.yml` 
+
 
