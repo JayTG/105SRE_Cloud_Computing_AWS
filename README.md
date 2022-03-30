@@ -486,7 +486,7 @@ YAML is a human-readable data-serialization language. It is commonly used for co
 
 ### YML API Task
 - Api deveployment file
-```
+```yml
 # YML is case sensitive - indetation of YML is important
 # use spaces not a tab
 apiVersion : apps/v1 # which api to use for deployment
@@ -518,7 +518,7 @@ spec:
        
 ```
 - Api service file
-```
+```yml
 apiVersion : v1 # which api to use for deployment
 kind: Service # what kind of service/object you want to create
 #Metadata for name
