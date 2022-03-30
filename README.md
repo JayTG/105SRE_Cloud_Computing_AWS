@@ -461,4 +461,10 @@ This output should look like this
 - If it's not running restart docker or restart your local machine (check the memory too)
 - If all those solutions are not working you have to change the host file add 127.0.0.1 host.docker.internal at the end. Check this solution https://github.com/kubernetes/kubectl/issues/874#issuecomment-1080857862 and with help editing the host file go to this page https://www.groovypost.com/howto/edit-hosts-file-windows-10/
 
+### K8 Architecture 
+
+![k8](https://user-images.githubusercontent.com/87706066/160861039-bab7f6ee-2099-4b18-9294-9a6755dec9bb.png)
+
+
 ### Creating YML
+[YML link](yml.md)
