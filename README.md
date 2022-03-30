@@ -390,7 +390,7 @@ docker run -d -p 80:80 jaytg/sre_105:latest
 - If all good then push to dockerhub
 
 Dockerfile code
-`````bash
+`````docker
 # select base image
 FROM nginx
 
@@ -414,7 +414,7 @@ Follow this tutorial https://docs.microsoft.com/en-us/dotnet/core/docker/build-c
 
 -Add a docker in the project's root folder rewrite the dll file to successfully execute 
 
-````bash
+````docker
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
