@@ -548,5 +548,13 @@ spec:
 
 ```
 
+### Minikube
+minikube is a tool that lets you run Kubernetes locally. minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS and Linux PCs) so that you can try out Kubernetes, or for daily development work.
 
+### K8 Cluster API diagram
+
+![k8 api](https://user-images.githubusercontent.com/87706066/161084317-6993cd6b-aba0-47a8-946e-5a318a5579e8.png)
+
+### K8 Command Documentation
+https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
