@@ -444,11 +444,13 @@ https://hub.docker.com/r/jaytg/105_sre_northwind_api
 
 Kubernetes, often abbreviated as “K8s”, orchestrates containerized applications to run on a cluster of hosts. The K8s system automates the deployment and management of cloud native applications using on-premises infrastructure or public cloud platforms.
 
-- services: deployment, service, pods, replicasets, crobjob, autoscalinggroup, horizontal pod scaling group (HPA)
-- `kubectl get <service_name>` - deployment - pod - rs
-- `kubectl get deploy <nginx_deploy>` (nginx_svc)
-- `kubectl get pods` 
-- `kubect describe pod <pod_name>`
+````
+services: deployment, service, pods, replicasets, crobjob, autoscalinggroup, horizontal pod scaling group (HPA)
+kubectl get <service_name> - deployment - pod - rs
+kubectl get deploy <nginx_deploy> (nginx_svc)
+kubectl get pods 
+kubect describe pod <pod_name>
+`````
 
 ### Clusters 
 A Kubernetes cluster is a set of nodes that run containerized applications. Containerizing applications packages an app with its dependences and some necessary services. They are more lightweight and flexible than virtual machines.
