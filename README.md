@@ -455,8 +455,12 @@ kubect describe pod <pod_name>
 ### Clusters 
 A Kubernetes cluster is a set of nodes that run containerized applications. Containerizing applications packages an app with its dependences and some necessary services. They are more lightweight and flexible than virtual machines.
 
+![unknown](https://user-images.githubusercontent.com/87706066/161016905-5a3c9bdd-616a-434f-9dd9-9c92d8389a22.png)
+
 ### Load Balancers
 The Kubernetes load balancer sends connections to the first server in the pool until it is at capacity, and then sends new connections to the next available server. This algorithm is ideal where virtual machines incur a cost, such as in hosted environments.
+
+![k8](https://user-images.githubusercontent.com/87706066/160861039-bab7f6ee-2099-4b18-9294-9a6755dec9bb.png)
 
 ### Enabling Kubernetes
 - Open Docker Desktop on go to settings
@@ -471,11 +475,7 @@ This output should look like this
 - If it's not running restart docker or restart your local machine (check the memory too)
 - If all those solutions are not working you have to change the host file add 127.0.0.1 host.docker.internal at the end. Check this solution https://github.com/kubernetes/kubectl/issues/874#issuecomment-1080857862 and with help editing the host file go to this page https://www.groovypost.com/howto/edit-hosts-file-windows-10/
 
-### K8 Architecture 
 
-![k8](https://user-images.githubusercontent.com/87706066/160861039-bab7f6ee-2099-4b18-9294-9a6755dec9bb.png)
-
-##
 
 ### Creating YML
 
