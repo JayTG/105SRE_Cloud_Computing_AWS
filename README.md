@@ -555,6 +555,25 @@ minikube is a tool that lets you run Kubernetes locally. minikube runs a single-
 
 ![k8 api](https://user-images.githubusercontent.com/87706066/161084317-6993cd6b-aba0-47a8-946e-5a318a5579e8.png)
 
+### K8 Cluster API On EC2 Instance
+- Follow the tutorial https://www.radishlogic.com/kubernetes/running-minikube-in-aws-ec2-ubuntu/ to know requirents for creating the EC2 instance
+- Connect to your instance and create a new directory with `mkdir`
+- Disconnect from the instance and copy your deployment yml file to the new directory from your local to the instance `scp -i ~/.ssh/105.pem <file_path>/<file_name> ubuntu@ec2-<public_ip>.<region_code>.compute.amazonaws.com1:~/<folder_name> 
+- Go back to the tutorial follow instructions on how to install Docker, Kubectl and minikube in Linux 
+- If you get the error `Sorry, Kubernetes v1.18.2 requires conntrack to be installed in root's path` enter this command `sudo apt-get install -y conntrack`
+- After becoming a root user `sudo -i` go back to the directory containing the yml file `cd home/ubuntu/<folder_name>
+- Create a deployment `kubectl create -f <file_name>.yml`
+- Expose the deployment `kubectl expose deployment api-deployment --type=NodePort` (NodePort is required)
+- get the created service `kubectl get svc`
+- Copy the outbound port 
+
+![Screenshot 2022-03-31 174051](https://user-images.githubusercontent.com/87706066/161106762-bbf14c0f-8b10-4af8-8017-4438395b4399.png)
+
+- Check if it working on the browser enter <public_ip>:<port> in the search bar
+
+
 ### K8 Command Documentation
 https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
+
+
 
