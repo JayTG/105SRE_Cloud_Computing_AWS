@@ -575,5 +575,9 @@ minikube is a tool that lets you run Kubernetes locally. minikube runs a single-
 ### K8 Command Documentation
 https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands
 
-
-
+### stateless and stateful (Nacl and security group)
+- Nacl is stateless and Security Group is stateful.
+- stateless means that any changes applied to an incoming rule isn't automatically applied to an outgoing rule.
+- Example: If a request comes through port 80, it should be explicitly indicated that its outgoing response would be the same port 80.
+ - stateful means that any changes which are applied to an incoming rule is automatically applied to a rule which is outgoing.
+ - Example: If the incoming port of a request is 80, the outgoing response of that request is also 80 (it is opened automatically) by default.
